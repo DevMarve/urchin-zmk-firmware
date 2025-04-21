@@ -56,9 +56,8 @@
 			label = "FRow";
 			bindings = <
 			&trans     &trans     &trans    &trans     &trans    	           &trans  &kp F7        &kp F8       &kp F9       &kp F10
-			//&bt BT_SEL 0 &bt BT_SEL 1 &trans &kp C_VOLUME_UP         &out OUT_TOG                 &kp HOME       &kp PG_DN      &kp PG_UP    &kp END         &trans
 			&trans       &trans       &trans &mt LMETA C_VOLUME_DOWN &trans                       &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &msc SCRL_UP
-			&bt BT_SEL 2 &bt BT_SEL 3 &trans &kp C_MUTE              &bt BT_CLR			          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &msc SCRL_DOWN
+			&trans     &trans     &trans    &trans     &trans    	           &trans  &kp F7        &kp F8       &kp F9       &kp F10
 							                                         &trans &trans      &mkp LCLK &mkp RCLK
 			>;
 		};
