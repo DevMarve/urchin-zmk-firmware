@@ -11,10 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
-// #define BASE 0
-// #define NUM 1
-// #define FNC 2
-// #define NAV 3
+#define BASE 0
+#define NUM 1
+#define FNC 2
+#define NAV 3
 // -----------------
 
 / {
@@ -22,18 +22,18 @@
 		compatible = "zmk,keymap";
 		// Base alpha layer
 		default_layer {
-			label = "a";
+			label = "qwerty";
 			bindings = <
-			&kp Q         &kp W       &kp E      &kp R     &kp T                                 &kp Y     &kp U       &kp I      &kp O       &kp P
-			&mt LSHIFT A  &mt LCTRL S &mt LALT D &mt LMETA &mt ESC G                             &mt ESC H &mt RMETA J &mt RALT K &mt RCTRL L &mt RSHIFT SEMI
-			&kp Z         &kp X       &kp C      &kp V     &kp B                                 &kp N     &kp M       &kp COMMA  &kp DOT     &kp SLASH
-						                                   &lt 1 SPACE &lt 3 TAB    &kp BSPC &lt 2 RETURN
+			&kp Q         &kp W       &kp E      &kp R       &kp T                                 &kp Y     &kp U       &kp I      &kp O       &kp P
+			&mt LSHIFT A  &mt LCTRL S &mt LALT D &mt LMETA F &mt ESC G                             &mt ESC H &mt RMETA J &mt RALT K &mt RCTRL L &mt RSHIFT SEMI
+			&kp Z         &kp X       &kp C      &kp V       &kp B                                 &kp N     &kp M       &kp COMMA  &kp DOT     &kp SLASH
+						                                     &lt 1 SPACE &lt 3 TAB    &kp BSPC &lt 2 RETURN
 			>;
 		};
 
 		// Numbers and high frequency symbols
 		num_layer {
-			label = "b";
+			label = "numblock";
 			bindings = <
             &kp GRAVE      &kp LBKT       &kp SEMI      &kp SQT        &kp MINUS		       &kp KP_SLASH    &kp N7       &kp N8      &kp N9       &kp MINUS
 			&mt LSHIFT SQT &mt LCTRL LBKT &mt LALT LBRC &mt LMETA LPAR &kp TILDE               &kp KP_MULTIPLY &mt RMETA N4 &mt RALT N5 &mt RCTRL N6 &mt RSHIFT KP_PLUS
@@ -44,7 +44,7 @@
 
 		// Main modifiers and arrow keys
 		fnc_layer {
-			label = "c";
+			label = "fncblock";
 			bindings = <
 			&trans     &trans     &trans    &trans     &trans    	           &trans  &kp F7        &kp F8       &kp F9       &kp F10
 			&kp LSHIFT &kp LCTRL  &kp LALT  &kp LMETA  &kp INS 			       &kp DEL &mt RMETA F4  &mt RALT F5  &mt RCTRL F6 &mt RSHIFT F11
@@ -55,7 +55,7 @@
 
 		// Function keys with modifiers
 		nav_layer {
-			label = "d";
+			label = "navigation";
 			bindings = <
 			&bt BT_SEL 0 &bt BT_SEL 1 &trans &kp C_VOLUME_UP         &out OUT_TOG                 &kp HOME       &kp PG_DN      &kp PG_UP    &kp END         &trans
 			&trans       &trans       &trans &mt LMETA C_VOLUME_DOWN &trans                       &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT       &msc SCRL_UP
