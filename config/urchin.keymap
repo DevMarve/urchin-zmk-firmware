@@ -11,10 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 // Layer definitions
-#define BASE 0
-#define NUM 1
-#define FNC 2
-#define NAV 3
+// #define BASE 0
+// #define NUM 1
+// #define FNC 2
+// #define NAV 3
 // -----------------
 
 / {
@@ -27,7 +27,7 @@
 			&kp Q         &kp W       &kp E      &kp R     &kp T                                 &kp Y     &kp U       &kp I      &kp O       &kp P
 			&mt LSHIFT A  &mt LCTRL S &mt LALT D &mt LMETA &mt ESC G                             &mt ESC H &mt RMETA J &mt RALT K &mt RCTRL L &mt RSHIFT SEMI
 			&kp Z         &kp X       &kp C      &kp V     &kp B                                 &kp N     &kp M       &kp COMMA  &kp DOT     &kp SLASH
-						                                   &lt NUM SPACE &lt NAV TAB    &kp BSPC &lt FNC RETURN
+						                                   &lt 1 SPACE &lt 3 TAB    &kp BSPC &lt 2 RETURN
 			>;
 		};
 
