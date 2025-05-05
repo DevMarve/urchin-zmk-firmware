@@ -17,7 +17,11 @@
 #define NAV 3
 // -----------------
 
-/ {
+/ {&mt
+    {
+        flavor = "balanced";
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 		// Base alpha layer
