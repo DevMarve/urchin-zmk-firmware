@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_de.h"
 
 // Layer definitions
 #define BASE 0
@@ -39,9 +40,9 @@
 		num_layer {
 			label = "numblock";
 			bindings = <
-            &kp GRAVE      &kp LBKT       &kp SEMI      &kp SQT        &kp MINUS		       &kp SLASH       &kp N7       &kp N8      &kp N9       &kp MINUS
-			&mt LSHIFT SQT &mt LCTRL LBKT &mt LALT LBRC &mt LMETA LPAR &kp TILDE               &kp ASTRK       &mt RMETA N4 &mt RALT N5 &mt RCTRL N6 &mt RSHIFT PLUS
-			&kp DQT        &kp RBKT       &kp RBRC      &kp RPAR       &kp BSLH 	           &kp N0          &kp N1       &kp N2      &kp N3       &kp EQUAL
+            &kp GRAVE      &kp DE_U_UMLAUT  &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp DE_SZ		       &kp SLASH       &kp N7       &kp N8      &kp N9       &kp MINUS
+			&mt LSHIFT SQT &mt LCTRL LBKT   &mt LALT LBRC   &mt LMETA LPAR  &kp TILDE              &kp ASTRK       &mt RMETA N4 &mt RALT N5 &mt RCTRL N6 &mt RSHIFT PLUS
+			&kp DQT        &kp RBKT         &kp RBRC        &kp RPAR        &kp BSLH 	           &kp N0          &kp N1       &kp N2      &kp N3       &kp EQUAL
 														               &trans &trans    &trans &trans
 			>;
 		};
