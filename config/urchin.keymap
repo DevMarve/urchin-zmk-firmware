@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_de.h"
 
 // Layer definitions
 #define BASE 0
@@ -32,7 +31,7 @@
 			&kp Q         &kp W       &kp E      &kp R       &kp T                                 &kp Y     &kp U       &kp I      &kp O       &kp P
 			&mt LSHIFT A  &mt LCTRL S &mt LALT D &mt LMETA F &mt ESC G                             &mt ESC H &mt RMETA J &mt RALT K &mt RCTRL L &mt RSHIFT SEMI
 			&kp Z         &kp X       &kp C      &kp V       &kp B                                 &kp N     &kp M       &kp COMMA  &kp DOT     &kp SLASH
-						                                     &lt 3 TAB &lt 1 SPACE    &lt 2 RETURN &kp BSPC
+						                                     &lt 3 TAB &lt 1 SPACE    &lt 2 RETURN &mt RA(u) BSPC
 			>;
 		};
 
@@ -40,7 +39,7 @@
 		num_layer {
 			label = "numblock";
 			bindings = <
-            &kp GRAVE      &kp DE_U_UMLAUT  &kp DE_O_UMLAUT &kp DE_A_UMLAUT &kp DE_SZ		       &kp SLASH       &kp N7       &kp N8      &kp N9       &kp MINUS
+            &kp GRAVE      &kp RA(y)        &kp RA(p)       &kp RA(q)       &kp RA(s)		       &kp SLASH       &kp N7       &kp N8      &kp N9       &kp MINUS
 			&mt LSHIFT SQT &mt LCTRL LBKT   &mt LALT LBRC   &mt LMETA LPAR  &kp TILDE              &kp ASTRK       &mt RMETA N4 &mt RALT N5 &mt RCTRL N6 &mt RSHIFT PLUS
 			&kp DQT        &kp RBKT         &kp RBRC        &kp RPAR        &kp BSLH 	           &kp N0          &kp N1       &kp N2      &kp N3       &kp EQUAL
 														               &trans &trans    &trans &trans
