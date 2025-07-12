@@ -29,8 +29,8 @@ macros {
             = <&kp LSHIFT(LALT)>
             , <&kp LCTRL(SPACE)>
             ;
-    }
-}
+    };
+};
 
 / {
 	keymap {
