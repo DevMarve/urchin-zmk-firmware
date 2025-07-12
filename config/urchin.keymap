@@ -28,8 +28,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells =  <0>;
             bindings
-                = <&kp LSHIFT(LALT)>
-                , <&kp LCTRL(SPACE)>
+                = <&kp LS(LALT)>
+                , <&kp LC(SPACE)>
                 ;
         };
     };
