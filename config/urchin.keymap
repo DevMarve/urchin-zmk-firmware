@@ -21,18 +21,19 @@
     flavor = "balanced";
 };
 
-macros {
-    olt: os_language_toggle {
-        compatible = "zmk,behavior-macro";
-        #binding-cells =  <0>;
-        bindings
-            = <&kp LSHIFT(LALT)>
-            , <&kp LCTRL(SPACE)>
-            ;
-    };
-};
 
 / {
+    macros {
+        olt: os_language_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells =  <0>;
+            bindings
+                = <&kp LSHIFT(LALT)>
+                , <&kp LCTRL(SPACE)>
+                ;
+        };
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 		// Base alpha layer
